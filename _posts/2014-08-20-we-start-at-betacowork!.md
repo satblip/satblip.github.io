@@ -1,16 +1,15 @@
 ---
 layout: post
-title: We start at Betacowork!
+title: I've started at Betacowork!
 description: "Satprod Group is taking seats at Betacowork"
 tags: [coworking, satprod, global]
-
 ---
 
-So, today, we started to **cowork**. Yes, finally after years of work at my place, I wanted to leave my house at lest a bit during the week.
+So, today, I've started to **cowork** with [Gus](https://be.linkedin.com/in/aborsu). Yes, finally after years of work at my place, I wanted to leave my house a bit during the week.
 <br>
-So, we decide to find a place to rent to sit and work. After few searchs, we've found the [Betacowork](http://www.betacowork.com/) space in Etterbeek. Yes, like 5minutes walk from our acutal place! And like Gus said, 5minutes walk if we're slow.
+So, we decide to find a place to rent with a great womminuty to work with. After few searchs, we've found the [Betacowork](http://www.betacowork.com/) space in Etterbeek. Yes, like 5minutes walk from our acutal place! And like [Gus](https://be.linkedin.com/in/aborsu) said, 5minutes walk if we're slow.
 <br>
-We took some info from [Stefania Scognamiglio](http://www.betacowork.com/profile/?profile_id=851) on their website (instant chat) and we subscirit for a trial day the day after.
+We took some info from [Stefania Scognamiglio](http://www.betacowork.com/profile/?profile_id=851) on their website (instant chat) and we subscribe for a trial day the day after.
 <br>
 We started our day with a visit kindly done by [Sara Magnabosco](http://www.betacowork.com/profile/1610/sara-magnabosco/), after that, we sit with [Ramon Suarez](http://www.betacowork.com/profile/?profile_id=181) during his lunch (with the non-enought knowed spicy sauce :) ) and explained him our project. The place is quiet, lighty and the team that leads the project seems fun and proactive. Let's try then!
 <br>
