@@ -9,6 +9,7 @@ footer-links:
   rss: yes
   twitter: satblip
 google_analytics: UA-48574141-4
+https_redirect: true
 url: blog.louisborsu.be
 baseurl: ""
 
