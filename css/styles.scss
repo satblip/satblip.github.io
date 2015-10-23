@@ -1,0 +1,80 @@
+---
+---
+
+.wrapper-masthead {
+  background-color: #EAA824;
+}
+
+.site-name {
+  color: white;
+}
+
+.site-description {
+  color: #815C14;
+}
+
+nav a {
+  color: #815C14;
+}
+
+.post h1{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: #333333;
+}
+
+a:hover, a:active {
+  color: #706666;
+}
+
+.entry {
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: justify;
+  text-justify: inter-word;
+  color: rgb(102, 102, 102);
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14.5px;
+  font-weight: normal;
+}
+
+.date {
+  background-color: rgb(252, 242, 222);
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  box-sizing: border-box;
+  color: rgb(234, 168, 36);
+  display: inline-block;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  height: 22px;
+  line-height: 22px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 2px;
+  padding-bottom: 0px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 0px;
+  text-align: left;
+}
+
+.read-more {
+  box-sizing: border-box;
+  color: rgb(102, 102, 102);
+  display: inline-block;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12px !important;
+  text-transform: none !important;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+}
