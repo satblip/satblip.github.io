@@ -3,22 +3,86 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-    {% if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+    <!-- General SEO -->
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
     {% else %}
     <meta name="description" content="{{ site.description }}">
-    <meta property="og:description" content="{{ site.description }}" />
     {% endif %}
-    <meta name="author" content="{{ site.name }}" />
-
+    <meta name="author" content="{{ site.seo.author }}" />
     {% if page.keywords %}
     <meta name="keywords" content="{{ page.keywords }}" />
     {% endif %}
 
+    <!-- Facebook SEO -->
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}" />
-    <meta property="twitter:title" content="{{ page.title }}" />
+    {% else %}
+    <meta property="og:title" content="{{ site.title }}" />
+    {% endif %}
+    {% if page.description %}
+    <meta property="og:description" content="{{ page.description }}" />
+    {% else %}
+    <meta property="og:description" content="{{ site.description }}" />
+    {% endif %}
+    {% if page.title %}
+    <meta property="og:type" content="article">
+    {% else %}
+    <meta property="og:type" content="website">
+    {% endif %}
+    {% if page.url %}
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+    {% endif %}
+    {% if page.image %}
+    <meta property="og:image" content="{{ site.url }}/images/og/{{ page.title | slugify }}.png">
+    {% else %}
+    <meta property="og:image" content="{{ site.url }}/images/og/main.png">
+    {% endif %}
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="fb:admins" content="{{ site.seo.facebookAdmin }}" />
+
+    <!-- Twitter SEO -->
+    {% if page.title %}
+    <meta name="twitter:title" content="{{ page.title }}" />
+    {% else %}
+    <meta name="twitter:title" content="{{ site.title }}" />
+    {% endif %}
+    {% if page.description %}
+    <meta name="twitter:description" content="{{ page.description }}">
+    {% else %}
+    <meta name="twitter:description" content="{{ site.description }}">
+    {% endif %}
+    {% if page.url %}
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+    {% endif %}
+    {% if page.image %}
+    <meta name="twitter:image" content="{{ site.url }}/images/og/{{ page.title | slugify }}.png">
+    {% else %}
+    <meta name="twitter:image" content="{{ site.url }}/images/og/main.png">
+    {% endif %}
+    <meta name="twitter:card" content="{{ site.seo.twitterType }}">
+    <meta name="twitter:site" content="{{ site.seo.twitterSite }}">
+    <meta name="twitter:creator" content="{{ site.seo.twitterCreator }}">
+
+    <!-- G+ SEO -->
+    <link rel="author" href="{{ site.seo.authorGPlus }}"/>
+    <link rel="publisher" href="{{ site.seo.authorGPlus }}" />
+
+    <!-- Article Enriched Data -->
+    {% if page.date %}
+    <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+    <meta content="{{ site.url }}/about/" property="article:author">
+    {% endif %}
+    {% if page.categories %}
+    {% for category in page.categories limit:1 %}
+    <meta content="{{ category }}" property="article:section">
+    {% endfor %}
+    {% endif %}
+    {% if page.tags %}
+    {% for tag in page.tags %}
+    <meta content="{{ tag }}" property="article:tag">
+    {% endfor %}
     {% endif %}
 
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url }}" />

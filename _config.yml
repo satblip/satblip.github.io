@@ -1,4 +1,5 @@
 name: Louis Borsu
+title: Blog of Louis Borsu
 description: This is the blog of Louis Borsu
 avatar: https://louisborsu.be/images/louis_borsu.jpg
 
@@ -12,6 +13,15 @@ google_analytics: UA-53455507-2
 https_redirect: true
 url: https://blog.louisborsu.be
 baseurl: ""
+
+seo:
+  author: "Louis Borsu"
+  authorGPlus: "https://plus.google.com/+LouisBorsu"
+  facebookAdmin: 558346437
+  twitterType: "summary_large_image"
+  twitterSite: "@satblip"
+  twitterCreator: "@satblip"
+
 
 #
 # !! You don't need to change any of the configuration flags below !!
