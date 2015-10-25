@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: AWS IoT - Getting sarted tutorial with node.js
+title: AWS IoT - Getting started tutorial with node.js
 description: "Getting sarted tutorial with node.js on the new AWS IoT service"
 tags: [AWS, IoT, internet of things, node.js, embed]
 image: false
