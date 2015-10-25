@@ -2,12 +2,10 @@
 layout: post
 published: true
 title: AWS IoT - Getting started tutorial with node.js
-description: "Getting sarted tutorial with node.js on the new AWS IoT service"
+description: "Getting started tutorial with node.js on the new AWS IoT service"
 tags: [AWS, IoT, internet of things, node.js, embed]
-image: false
+image: true
 ---
-
-![AWS IoT New service][1]
 
 During his 2015 edition if the re:Invent show, AWS has released a new tool dedicated to our electronic devices.
 
@@ -199,7 +197,6 @@ Here is the end of our tutorial, it's a very basic introduction to the usage of 
 
 You can also find ore advanced examples on the [AWS JS SDK repository](https://github.com/aws/aws-iot-device-sdk-js).
 
-[1]: https://blog.louisborsu.be/images/posts/2015-10-22-aws-iot-getting-sarted-tutorial-with-nodejs/1-aws-iot-new-service.png "AWS IoT New service"
 [2]: https://blog.louisborsu.be/images/posts/2015-10-22-aws-iot-getting-sarted-tutorial-with-nodejs/2-create-a-new-project.png "Create a new project"
 [3]: https://blog.louisborsu.be/images/posts/2015-10-22-aws-iot-getting-sarted-tutorial-with-nodejs/3-you-now-have-a-thing-in-yout-list.png "You now have a thing in your list"
 [4]: https://blog.louisborsu.be/images/posts/2015-10-22-aws-iot-getting-sarted-tutorial-with-nodejs/4-add-a-device-to-your-thing.png "Add a device to your thing"

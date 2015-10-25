@@ -2,15 +2,19 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+<article class="post" itemscope itemtype="http://schema.org/Article">
+  <h1 itemprop="name">{{ page.title }}</h1>
+  <h4 itemprop="headline">{{ page.description }}</h4>
 
-  <div class="entry">
+  <div class="entry" itemprop="articleBody">
+    {% if page.image %}
+    <img src="{{ site.url }}/images/og/{{ page.title | slugify }}.png" itemprop="image">
+    {% endif %}
     {{ content }}
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    Written on <span itemprop="datePublished">{{ page.date | date: "%B %e, %Y" }}</span> by <span itemprop="author">{{ site.seo.author }}</span>
   </div>
 
   {% include disqus.html %}
