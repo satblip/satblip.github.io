@@ -4,12 +4,20 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <p class="date">{{ post.date | date: "%a, %d %b %Y" }}</p>
+    <article class="post" itemscope itemtype="http://schema.org/Article">
+      <h1><a href="{{ site.baseurl }}{{ post.url }}"><span itemprop="name">{{ post.title }}</span></a></h1>
+      <p class="date">Written on <span itemprop="datePublished">{{ post.date | date: "%B %e, %Y" }}</span> by <span itemprop="author">{{ site.seo.author }}</span></p>
 
       <div class="entry">
-        {{ post.excerpt }}
+        {% if post.image %}
+
+        <a href="{{ site.baseurl }}{{ post.url }}">
+            <center>
+                <img src="{{ site.url }}/images/og/{{ post.title | slugify }}.png" itemprop="image">
+            </center>
+        </a>
+        {% endif %}
+        <span itemprop="headline">{{ post.excerpt }}</span>
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
