@@ -31,6 +31,8 @@ markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
 
+disqus: louisborsu
+
 # The release of Jekyll Now that you're using
 version: v2.5.3
 
