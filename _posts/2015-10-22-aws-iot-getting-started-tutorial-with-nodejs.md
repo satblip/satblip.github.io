@@ -9,7 +9,7 @@ image: true
 
 During his 2015 edition if the re:Invent show, AWS has released a new tool dedicated to our electronic devices.
 
-The tool is a pub/sub system that include a full SDK, tls connections, and more...
+The tool is a pub/sub system that includes a full SDK, TLS connections, and more...
 
 Let's get started with a simple example and run our first application with the node.js platform (used by the [Beaglebone](http://beagleboard.org/black) for instance).
 
@@ -21,7 +21,7 @@ You now have your first *thing* in your dashboard :
 
 ![You now have a thing in your list][3]
 
-To be able to publish or receive any message, we have to create a device into our project. To do it, we will click on our *thing* and select `Connect a device`
+To be able to publish or receive any messages, we have to create a device into our project. To do it, we will click on our *thing* and select `Connect a device`
 
 ![Add a device to your thing][4]
 
@@ -33,7 +33,7 @@ Yes, as AWS does for all the credentials, it's a one time access, which makes se
 
 ![Select your platform and download your certificates][5]
 
-You will also need a root certificate (also called CA certificate) to be able to open the *tls* connection with the server. [This one is available on Verisign website](https://www.symantec.com/content/en/us/enterprise/verisign/roots/VeriSign-Class%203-Public-Primary-Certification-Authority-G5.pem). Download this file and name it `root-CA.crt`
+You will also need a root certificate (also called CA certificate) to be able to open the *TLS* connection with the server. [This one is available on Verisign website](https://www.symantec.com/content/en/us/enterprise/verisign/roots/VeriSign-Class%203-Public-Primary-Certification-Authority-G5.pem). Download this file and name it `root-CA.crt`
 
 Let's clean a bit and rename/move our certificate to our project folder. The names that I'll use in this example are:
 
@@ -53,7 +53,7 @@ We now have everything ready on AWS side, and you should see three items in your
 
 ![You should now have three items][7]
 
-The last step of the setup will be to install the required SDK. AWS release a *npm* package for us:
+The last step of the setup will be to install the required SDK. AWS has released a *npm* package for us:
 
 ```bash
 # npm i aws-iot-device-sdk
@@ -90,7 +90,7 @@ device
   });
 ```
 
-At this step, if we run our application, we will see that it is correctly connecting to the AWS IoT server.
+At this step, if we run our application, we will see that it is correctly connecting to the AWS IoT servers.
 
 ```bash
 # node test.js
@@ -151,13 +151,13 @@ We gonna write the query to match to any messages published to our new queue `to
 
 ![Let's pick up all messages from topic 2][10]
 
-And we will pick the republishing action. That way we'll be able to republish our message to the queue we have subscribed to : `topic_1`
+And we will pick the republishing action. That way we'll be able to republish our messages to the queue we have subscribed to : `topic_1`
 
 ![republish messages to an other queue][11]
 
 ![Let's use the queue we've subscribed to][12]
 
-To be able to publish to our queue, we need permissions, which means creating a new policy in the IAM. Hopefully, AWS helps us here by automating the process. Indeed, if you click on `Create a new role` you are redirect to a pre filled policy generator:
+To be able to publish to our queue, we need permissions, which means creating a new policy in the IAM. Hopefully, AWS helps us here by automating the process. Indeed, if you click on `Create a new role` you are redirected to a pre-filled policy generator:
 
 ![We have to create a policy to have access][13]
 
@@ -165,7 +165,7 @@ Just validate it as it is and it will be automatically added to our *rule*:
 
 ![The policy is automatically added][14]
 
-Now just click on `Add Action` and you'll be able to finish the *rule* creation process:
+Now, just click on `Add Action` and you'll be able to finish the *rule* creation process:
 
 ![Your action is added][15]
 
@@ -195,7 +195,7 @@ Here is the end of our tutorial, it's a very basic introduction to the usage of 
 - Light up a led from a web server
 - ...
 
-You can also find ore advanced examples on the [AWS JS SDK repository](https://github.com/aws/aws-iot-device-sdk-js).
+You can also find more advanced examples on the [AWS JS SDK repository](https://github.com/aws/aws-iot-device-sdk-js).
 
 [2]: https://blog.louisborsu.be/images/posts/2015-10-22-aws-iot-getting-sarted-tutorial-with-nodejs/2-create-a-new-project.png "Create a new project"
 [3]: https://blog.louisborsu.be/images/posts/2015-10-22-aws-iot-getting-sarted-tutorial-with-nodejs/3-you-now-have-a-thing-in-yout-list.png "You now have a thing in your list"
