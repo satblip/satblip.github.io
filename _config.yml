@@ -28,7 +28,7 @@ seo:
 #
 
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 permalink: /:title/
 
 disqus: louisborsu
