@@ -176,7 +176,7 @@ device
   .on('connect', function() {
     console.log('connected');
     device.subscribe('topic_1');
-    device.publish('topic_1', JSON.stringify({ test_data: 2}));
+    device.publish('topic_2', JSON.stringify({ test_data: 2}));
   });
 ```
 
