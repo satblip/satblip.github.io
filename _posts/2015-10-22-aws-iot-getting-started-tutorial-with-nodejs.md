@@ -197,6 +197,8 @@ Here is the end of our tutorial, it's a very basic introduction to the usage of 
 
 You can also find more advanced examples on the [AWS JS SDK repository](https://github.com/aws/aws-iot-device-sdk-js).
 
+If you want a French and updated version of this article, you can find it here : [https://lacavediy.com/2018/01/01/aws-iot-connexion-avec-le-guide-assiste/](https://lacavediy.com/2018/01/01/aws-iot-connexion-avec-le-guide-assiste/)
+
 [2]: https://blog.louisborsu.be/images/posts/2015-10-22-aws-iot-getting-sarted-tutorial-with-nodejs/2-create-a-new-project.png "Create a new project"
 [3]: https://blog.louisborsu.be/images/posts/2015-10-22-aws-iot-getting-sarted-tutorial-with-nodejs/3-you-now-have-a-thing-in-yout-list.png "You now have a thing in your list"
 [4]: https://blog.louisborsu.be/images/posts/2015-10-22-aws-iot-getting-sarted-tutorial-with-nodejs/4-add-a-device-to-your-thing.png "Add a device to your thing"
